@@ -1,0 +1,221 @@
+@blue: #0dcaf0;
+@black: #000000;
+@black-opacity: #212529;
+@light-grey: #d9d9d9;
+@purple: #5f27cd;
+@scrolling-background: #212529;
+@white: #fff;
+@yellow: #feca57;
+
+* {
+	font-family: 'Montserrat Alternates', sans-serif;
+	margin: 0;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: linear-gradient(
+		75deg,
+		rgb(28, 16, 51) 5%,
+		rgb(95, 39, 205, 1) 15%,
+		rgba(254, 202, 87, 1) 50%,
+		rgba(13, 202, 240, 1) 100%
+	);
+}
+
+::-webkit-scrollbar-thumb {
+	background: transparent;
+	box-shadow: 0px 0px 0px 100000vh @white;
+}
+
+html {
+	height: 100%;
+}
+
+footer {
+	background-color: @black-opacity;
+	opacity: 0.9;
+
+	a {
+		text-decoration: none;
+		color: @white;
+
+		&:hover {
+			color: @blue;
+		}
+	}
+
+	.row {
+		height: 60px;
+	}
+}
+
+#about {
+	padding: 15px;
+}
+
+#contact {
+	background: @blue;
+	height: 350px;
+
+	.contact-form {
+		width: 600px;
+	}
+
+	textarea {
+		height: 100px;
+	}
+}
+
+#home {
+	height: 100vh;
+}
+
+#particles-js {
+	height: 100vh;
+}
+
+.form-control:focus {
+	box-shadow: 0px 1px 1px @blue inset, 0px 0px 8px @blue;
+}
+
+.form-submit,
+.form-submit:hover {
+	border: 4px solid;
+	color: @white;
+}
+
+.greeting {
+	position: relative;
+	bottom: 23rem;
+}
+
+.navbar-toggler:focus,
+.btn:focus {
+	box-shadow: none;
+}
+
+.navbar {
+	font-size: 16pt;
+
+	.navbar-collapse {
+		justify-content: center;
+	}
+}
+
+.nav-pills {
+	a {
+		color: @white;
+	}
+
+	.nav-link.active,
+	.nav-link:hover {
+		color: @blue;
+		background-color: transparent;
+	}
+}
+
+.parallax-1 {
+	position: relative;
+	min-height: 400px;
+	background: url('../images/glacier-water.jpg') no-repeat fixed center;
+	background-size: cover;
+}
+
+.resume-pdf {
+	background-color: @blue;
+	color: @white;
+
+	&:hover {
+		box-shadow: 0px 3px 3px @blue inset, 0px 0px 6px @blue;
+		color: @white;
+	}
+}
+
+.scrolling-active {
+	background-color: @scrolling-background;
+	height: 60px;
+	opacity: 0.9;
+}
+
+.timeline {
+	padding: 65px;
+
+	ul {
+		list-style: none;
+		position: relative;
+		margin: auto;
+
+		&::before {
+			content: ' ';
+			height: 100%;
+			width: 1px;
+			background-color: @light-grey;
+			position: absolute;
+			top: 0;
+			left: 2.5em;
+			z-index: -1;
+		}
+	}
+
+	li div {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.bullet {
+		width: 1em;
+		height: 1em;
+		border-radius: 50%;
+		background: @white;
+		margin-right: 1em;
+
+		&.blue {
+			border: 2px solid @blue;
+		}
+
+		&.purple {
+			border: 2px solid @purple;
+		}
+
+		&.yellow {
+			border: 2px solid @yellow;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.nav {
+		flex-direction: column;
+	}
+
+	.navbar-collapse {
+		font-size: 30px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.contact-form {
+		margin: 0 10px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.job-description {
+		margin-left: 38px;
+	}
+}
+
+@media screen and (min-width: 441px) {
+	.job-time-title {
+		width: 30%;
+	}
+
+	.job-description {
+		width: 60%;
+	}
+}
