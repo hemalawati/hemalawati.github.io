@@ -20,6 +20,11 @@
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
 		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap"
@@ -201,11 +206,6 @@
 		</svg>
 		<section id="contact">
 			<div class="d-flex justify-content-center">
-				<!-- <form
-					class="contact-form"
-					action="https://submit-form.com/AcsxvW0H"
-					autocomplete="off"
-				> -->
 				<form class="contact-form" id="contact-form" autocomplete="off">
 					<div class="form-floating mb-3">
 						<input
@@ -242,10 +242,41 @@
 					<button
 						type="submit"
 						class="btn btn-outline-info form-submit float-end w-25"
+						data-bs-toggle="modal"
+						data-bs-target="#staticBackdrop"
 					>
 						Send
 					</button>
 				</form>
+			</div>
+			<div
+				class="modal fade"
+				id="staticBackdrop"
+				data-bs-backdrop="static"
+				data-bs-keyboard="false"
+				tabindex="-1"
+				aria-labelledby="staticBackdropLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-body">
+							<h3>
+								Thank you, <span class="full-name"></span>.
+								<p>Your message has been sent.</p>
+							</h3>
+						</div>
+						<div class="modal-footer">
+							<button
+								type="button"
+								class="btn btn-info"
+								data-bs-dismiss="modal"
+							>
+								Close
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<footer class="container-fluid">

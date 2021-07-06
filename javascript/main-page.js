@@ -33,4 +33,7 @@ document.addEventListener('submit', function (evt) {
 			'Content-Type': 'application/json',
 		},
 	});
+
+	document.getElementsByClassName('full-name')[0].innerHTML = name.value;
+	document.querySelector('form').reset();
 });
