@@ -1,6 +1,6 @@
-// window.addEventListener('contextmenu', (event) => {
-// 	event.preventDefault();
-// });
+window.addEventListener('contextmenu', (event) => {
+	event.preventDefault();
+});
 
 window.addEventListener('scroll', () => {
 	let nav = document.querySelector('nav');
