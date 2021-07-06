@@ -1,6 +1,6 @@
-window.addEventListener('contextmenu', (event) => {
-	event.preventDefault();
-});
+// window.addEventListener('contextmenu', (event) => {
+// 	event.preventDefault();
+// });
 
 window.addEventListener('scroll', () => {
 	let nav = document.querySelector('nav');
@@ -19,3 +19,18 @@ hideOrShowIntro = () => {
 				'visible';
 		});
 };
+
+document.addEventListener('submit', function (evt) {
+	evt.preventDefault();
+
+	const { name, email, message } = document.querySelector('form').elements;
+	let obj = { name: name.value, email: email.value, message: message.value };
+
+	fetch('https://submit-form.com/AcsxvW0H', {
+		method: 'POST',
+		body: JSON.stringify(obj),
+		headers: {
+			'Content-Type': 'application/json',
+		},
+	});
+});
