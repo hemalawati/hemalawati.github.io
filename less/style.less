@@ -187,6 +187,28 @@ footer {
 	}
 }
 
+@media screen and (min-width: 1001px) {
+	.job-time-title {
+		width: 30%;
+	}
+
+	.job-description {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.job-description {
+		margin-left: 35px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.timeline {
+		padding: 20px;
+	}
+}
+
 @media screen and (max-width: 767px) {
 	.nav {
 		flex-direction: column;
@@ -204,18 +226,18 @@ footer {
 	}
 }
 
-@media screen and (max-width: 440px) {
-	.job-description {
-		margin-left: 38px;
-	}
-}
+@media screen and (max-width: 600px) {
+	.timeline {
+		.bullet {
+			margin-right: 0;
+		}
 
-@media screen and (min-width: 441px) {
-	.job-time-title {
-		width: 30%;
-	}
+		.ul {
+			left: -1.5em;
+		}
 
-	.job-description {
-		width: 60%;
+		.job-description {
+			margin-left: 20px;
+		}
 	}
 }
