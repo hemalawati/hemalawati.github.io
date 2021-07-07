@@ -26,9 +26,6 @@ footer a {
 footer a:hover {
   color: #0dcaf0;
 }
-footer .row {
-  height: 60px;
-}
 #about {
   padding: 15px;
 }
@@ -64,13 +61,15 @@ footer .row {
 .btn:focus {
   box-shadow: none;
 }
+.navbar-toggler-expand {
+  background-color: #212529;
+  opacity: 0.9;
+}
 .navbar {
   font-size: 16pt;
 }
 .navbar .navbar-collapse {
   justify-content: center;
-  background-color: #212529;
-  opacity: 0.9;
 }
 .nav-pills a {
   color: #fff;

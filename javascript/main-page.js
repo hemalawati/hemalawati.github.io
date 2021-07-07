@@ -13,10 +13,16 @@ hideOrShowIntro = () => {
 		.on('show.bs.collapse', () => {
 			document.getElementsByClassName('greeting')[0].style.visibility =
 				'hidden';
+			document
+				.getElementsByClassName('collapse')[0]
+				.classList.add('navbar-toggler-expand');
 		})
 		.on('hidden.bs.collapse', () => {
 			document.getElementsByClassName('greeting')[0].style.visibility =
 				'visible';
+			document
+				.getElementsByClassName('collapse')[0]
+				.classList.remove('navbar-toggler-expand');
 		});
 };
 
