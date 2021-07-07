@@ -69,6 +69,8 @@ footer .row {
 }
 .navbar .navbar-collapse {
   justify-content: center;
+  background-color: #212529;
+  opacity: 0.9;
 }
 .nav-pills a {
   color: #fff;
